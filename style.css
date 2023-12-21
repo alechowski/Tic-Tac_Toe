@@ -7,6 +7,8 @@
 :root {
     --main-color: #387946;
     --text-color: #fff;
+    --border-color-first: #552f26;
+    --border-color-second: #70461e;
 }
 
 body {
@@ -17,10 +19,10 @@ body {
     background-color: var(--main-color);
     font-family: sans-serif;
     color: var(--text-color);
-    border-top: 2em solid rgb(85, 47, 38);
-    border-bottom: 2em solid rgb(85, 47, 38);
-    border-right: 2em solid rgb(112, 70, 30);
-    border-left: 2em solid rgb(112, 70, 30);
+    border-top: 2em solid var(--border-color-first);
+    border-bottom: 2em solid var(--border-color-first);
+    border-right: 2em solid var(--border-color-second);
+    border-left: 2em solid var(--border-color-second);
 }
 
 .gameboard {
