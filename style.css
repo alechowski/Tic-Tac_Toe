@@ -17,6 +17,10 @@ body {
     background-color: var(--main-color);
     font-family: sans-serif;
     color: var(--text-color);
+    border-top: 2em solid rgb(85, 47, 38);
+    border-bottom: 2em solid rgb(85, 47, 38);
+    border-right: 2em solid rgb(112, 70, 30);
+    border-left: 2em solid rgb(112, 70, 30);
 }
 
 .gameboard {
