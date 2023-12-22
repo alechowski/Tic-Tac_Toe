@@ -29,8 +29,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    outline: 3px solid var(--main-color);
-    outline-offset: -3px;
+    /* outline: 3px solid var(--main-color);
+    outline-offset: -3px; */
 }
 
 .gameboard-box {
@@ -40,7 +40,16 @@ body {
     width: 100px;
     height: 100px;
     font-size: 4rem;
-    border: 2px solid var(--text-color);
+    border-bottom: 5px solid var(--text-color);
+    border-right: 5px solid var(--text-color);
+}
+
+.gameboard-box:nth-child(3n){
+    border-right: none;
+}
+
+.gameboard-box:nth-child(n+7){
+    border-bottom: none;
 }
 
 .gameboard-circle {
