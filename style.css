@@ -109,3 +109,10 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.gameover {
+    position: absolute;
+    display: none;
+    bottom: 10%;
+    font-size: 3rem;
+}
