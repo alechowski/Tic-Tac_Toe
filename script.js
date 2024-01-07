@@ -15,6 +15,7 @@ const startGame = () => {
         btn.addEventListener('click', (e) => {
             const player = e.target.textContent;
             console.log(player);
+            start.style.display = 'none'
         })
     
     });
