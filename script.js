@@ -7,3 +7,20 @@ const game = () => {
     startGame()
     endGame()
 }
+
+const startGame = () => {
+
+    const optionBtn = document.querySelectorAll('.startgame-btn');
+    optionBtn.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const player = e.target.textContent;
+            console.log(player);
+        })
+    
+    });
+
+    
+
+}
+
+startGame()
