@@ -9,6 +9,7 @@
 	--text-color: #fff;
 	--border-color-first: #552f26;
 	--border-color-second: #70461e;
+    --highlight-color: #ffff00;
 }
 
 body {
@@ -131,5 +132,5 @@ body {
 }
 
 .gameover-btn:hover {
-    color: #ffff00;
+    color: var(--highlight-color);
 }
