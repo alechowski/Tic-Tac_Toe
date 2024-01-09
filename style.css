@@ -123,14 +123,18 @@ body {
 }
 
 .gameover-btn {
+    padding: 0.5em;
 	border: none;
+    border-radius: 20%;
 	background-color: transparent;
 	color: var(--text-color);
 	font-size: 2rem;
 	cursor: pointer;
-    transition: 1s color;
+    transition: 1s;
 }
 
 .gameover-btn:hover {
-    color: var(--highlight-color);
+    color: #000;
+    background-color: var(--highlight-color);
+    transform: scale(1.1);
 }
