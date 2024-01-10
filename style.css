@@ -9,8 +9,8 @@
 	--text-color: #fff;
 	--border-color-first: #552f26;
 	--border-color-second: #70461e;
-    --highlight-color: #ffff00;
-    --dark-color: #000000;
+	--highlight-color: #ffff00;
+	--dark-color: #000000;
 }
 
 body {
@@ -116,26 +116,26 @@ body {
 .gameover {
 	position: absolute;
 	display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	bottom: 10%;
 	font-size: 3rem;
 }
 
 .gameover-btn {
-    padding: 0.5em;
+	padding: 0.5em;
 	border: none;
-    border-radius: 20%;
+	border-radius: 20%;
 	background-color: transparent;
 	color: var(--text-color);
 	font-size: 2rem;
 	cursor: pointer;
-    transition: 1s;
+	transition: 1s;
 }
 
 .gameover-btn:hover {
-    color: var(--dark-color);
-    background-color: var(--highlight-color);
-    transform: scale(1.1);
+	color: var(--dark-color);
+	background-color: var(--highlight-color);
+	transform: scale(1.1);
 }

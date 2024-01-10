@@ -6,25 +6,23 @@ const end = document.querySelector('.endgame');
 let player;
 
 const game = () => {
-    startGame()
-    endGame()
-}
+	startGame();
+	endGame();
+};
 
 const startGame = () => {
-
-    const optionBtn = document.querySelectorAll('.startgame-btn');
-    optionBtn.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            player = e.target.textContent;
-            console.log(player);
-            start.style.display = 'none'
-        })
-    
-    });
-}
+	const optionBtn = document.querySelectorAll('.startgame-btn');
+	optionBtn.forEach((btn) => {
+		btn.addEventListener('click', (e) => {
+			player = e.target.textContent;
+			console.log(player);
+			start.style.display = 'none';
+		});
+	});
+};
 
 const endGame = () => {
-    end.style.display = 'flex'
-}
+	end.style.display = 'flex';
+};
 
-startGame()
+startGame();
