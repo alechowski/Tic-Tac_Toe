@@ -21,8 +21,17 @@ const startGame = () => {
 	});
 };
 
+const gameplay = () => {
+    gameboardBoxes.forEach((box) => {
+        box.addEventListener('click', (e) => {
+            console.log(e.target.dataset.num);
+        })
+    })
+}
+
 const endGame = () => {
 	end.style.display = 'flex';
 };
 
 startGame();
+gameplay();
