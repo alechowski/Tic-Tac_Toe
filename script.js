@@ -29,6 +29,10 @@ const gameplay = () => {
     })
 }
 
+const test = (e) => {
+    console.log(e.target);
+}
+
 const endGame = () => {
 	end.style.display = 'flex';
 };
