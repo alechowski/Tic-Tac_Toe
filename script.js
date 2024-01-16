@@ -24,6 +24,9 @@ const startGame = () => {
 const gameplay = () => {
     gameboardBoxes.forEach((box) => {
         box.addEventListener('click', (e) => {
+            if(e.target.textContent != ''){
+                return
+            }
             e.target.textContent = player
             console.log(e.target.dataset.num);
         })
