@@ -4,6 +4,7 @@ const start = document.querySelector('.startgame');
 const end = document.querySelector('.endgame');
 
 let player;
+let computer;
 
 const WINS = [
     [1,2,3],
@@ -31,6 +32,14 @@ const startGame = () => {
 		});
 	});
 };
+
+const checkPlayer = () => {
+    if(player === 'X') {
+        computer === 'O';
+    }else {
+        computer === 'X';
+    }
+}
 
 const gameplay = () => {
     gameboardBoxes.forEach((box) => {
