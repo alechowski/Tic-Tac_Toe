@@ -58,5 +58,12 @@ const endGame = () => {
 	end.style.display = 'flex';
 };
 
+const restart = () => {
+    player = ''
+    computer = ''
+    start.style.display = 'flex'
+    end.style.display = 'none';
+}
+
 startGame();
 gameplay();
