@@ -27,7 +27,6 @@ const startGame = () => {
 	optionBtn.forEach((btn) => {
 		btn.addEventListener('click', (e) => {
 			player = e.target.textContent;
-			console.log(player);
 			start.style.display = 'none';
 		});
 	});
