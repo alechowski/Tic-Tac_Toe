@@ -15,7 +15,7 @@ const WINS = [
     [3,6,9],
     [1,5,9],
     [3,5,7],
-                ]
+                ];
 
 const game = () => {
 	startGame();
@@ -48,7 +48,7 @@ const gameplay = () => {
             if(e.target.textContent != ''){
                 return
             }
-            e.target.textContent = player
+            e.target.textContent = player;
             console.log(e.target.dataset.num);
         })
     })
@@ -59,9 +59,9 @@ const endGame = () => {
 };
 
 const restart = () => {
-    player = ''
-    computer = ''
-    start.style.display = 'flex'
+    player = '';
+    computer = '';
+    start.style.display = 'flex';
     end.style.display = 'none';
 }
 
