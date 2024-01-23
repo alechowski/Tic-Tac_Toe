@@ -49,7 +49,6 @@ const gameplay = () => {
                 return
             }
             e.target.textContent = player;
-            console.log(e.target.dataset.num);
         })
     })
 }
