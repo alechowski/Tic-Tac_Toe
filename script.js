@@ -42,7 +42,7 @@ const checkPlayer = () => {
     }
 }
 
-const gameplay = () => {
+const playerMove = () => {
     gameboardBoxes.forEach((box) => {
         box.addEventListener('click', (e) => {
             if(e.target.textContent != ''){
@@ -65,4 +65,4 @@ const restart = () => {
 }
 
 startGame();
-gameplay();
+playerMove();
