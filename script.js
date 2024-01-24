@@ -53,6 +53,11 @@ const playerMove = () => {
     })
 }
 
+const computerMove = () => {
+    const field = Math.floor(Math.random()*9)+1
+    console.log(field);
+}
+
 const endGame = () => {
 	end.style.display = 'flex';
 };
@@ -66,3 +71,4 @@ const restart = () => {
 
 startGame();
 playerMove();
+computerMove();
