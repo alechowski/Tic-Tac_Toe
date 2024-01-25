@@ -15,7 +15,7 @@ const WINS = [
     [3,6,9],
     [1,5,9],
     [3,5,7],
-                ]
+                ];
 
 const game = () => {
 	startGame();
@@ -42,16 +42,20 @@ const checkPlayer = () => {
     }
 }
 
-const gameplay = () => {
+const playerMove = () => {
     gameboardBoxes.forEach((box) => {
         box.addEventListener('click', (e) => {
             if(e.target.textContent != ''){
                 return
             }
-            e.target.textContent = player
-            console.log(e.target.dataset.num);
+            e.target.textContent = player;
         })
     })
+}
+
+const computerMove = () => {
+    const field = Math.floor(Math.random()*9)+1
+    console.log(field);
 }
 
 const endGame = () => {
@@ -59,11 +63,12 @@ const endGame = () => {
 };
 
 const restart = () => {
-    player = ''
-    computer = ''
-    start.style.display = 'flex'
+    player = '';
+    computer = '';
+    start.style.display = 'flex';
     end.style.display = 'none';
 }
 
 startGame();
-gameplay();
+playerMove();
+computerMove();
