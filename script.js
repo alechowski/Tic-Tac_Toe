@@ -54,8 +54,16 @@ const playerMove = () => {
 }
 
 const computerMove = () => {
-    const field = Math.floor(Math.random()*9)+1
+    let field = Math.floor(Math.random()*9)+1;
     console.log(field);
+    if (field != '') {
+        field = Math.floor(Math.random()*9)+1;
+        console.log(field);
+    }else {
+        gameboardBoxes[field].textContent = computer;
+    }
+
+
 }
 
 const endGame = () => {
