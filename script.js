@@ -34,9 +34,9 @@ const startGame = () => {
 
 const checkPlayer = () => {
     if(player === 'X') {
-        computer === 'O';
+        computer = 'O';
     }else if(player === 'O') {
-        computer === 'X';
+        computer = 'X';
     }else {
         return
     }
@@ -79,4 +79,3 @@ const restart = () => {
 
 startGame();
 playerMove();
-computerMove();
