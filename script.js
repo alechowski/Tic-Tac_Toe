@@ -19,6 +19,7 @@ const WINS = [
 
 const game = () => {
 	startGame();
+    checkPlayer();
 	endGame();
 };
 
@@ -49,20 +50,22 @@ const playerMove = () => {
                 return
             }
             e.target.textContent = player;
+            computerMove();
         })
     })
 }
 
 const computerMove = () => {
-    let field = Math.floor(Math.random()*9)+1;
+    let field;
+    let move = Math.floor(Math.random()*9)+1;
     console.log(field);
-    if (field != '') {
-        field = Math.floor(Math.random()*9)+1;
-        console.log(field);
-    }else {
-        gameboardBoxes[field].textContent = computer;
-    }
-
+    
+    gameboardBoxes.forEach(box => {
+        if(box.dataset.num == move && box.dataset.num == '') {
+            box.textContent = computer
+            console.log('O');
+        }
+    });
 
 }
 
