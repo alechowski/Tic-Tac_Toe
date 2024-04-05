@@ -36,10 +36,10 @@ const startGame = () => {
 const checkPlayer = () => {
     if(player === 'X') {
         computer = 'O';
-    }else if(player === 'O') {
+        console.log(player, computer);
+    }else if (player === 'O'){
         computer = 'X';
-    }else {
-        return
+        console.log(player, computer);
     }
 }
 
@@ -58,12 +58,11 @@ const playerMove = () => {
 const computerMove = () => {
     let field;
     let move = Math.floor(Math.random()*9)+1;
-    console.log(field);
-    
+    checkPlayer()   
     gameboardBoxes.forEach(box => {
-        if(box.dataset.num == move && box.dataset.num == '') {
+        if(box.dataset.num == move && box.textContent === '') {
+            field = box.dataset.num
             box.textContent = computer
-            console.log('O');
         }
     });
 
@@ -81,4 +80,5 @@ const restart = () => {
 }
 
 startGame();
+checkPlayer();
 playerMove();
