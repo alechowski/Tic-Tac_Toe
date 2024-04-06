@@ -45,26 +45,26 @@ const playerMove = () => {
     gameboardBoxes.forEach((box) => {
         box.addEventListener('click', (e) => {
             if(e.target.textContent != ''){
-                return
-            }
+                return;
+            };
             e.target.textContent = player;
             computerMove();
         })
     })
-}
+};
 
 const computerMove = () => {
     let field;
     let move = Math.floor(Math.random()*9)+1;
-    checkPlayer()   
+    checkPlayer();
     gameboardBoxes.forEach(box => {
         if(box.dataset.num == move && box.textContent === '') {
-            field = box.dataset.num
-            box.textContent = computer
+            field = box.dataset.num;
+            box.textContent = computer;
         }
     });
 
-}
+};
 
 const endGame = () => {
 	end.style.display = 'flex';
@@ -75,7 +75,7 @@ const restart = () => {
     computer = '';
     start.style.display = 'flex';
     end.style.display = 'none';
-}
+};
 
 startGame();
 checkPlayer();
