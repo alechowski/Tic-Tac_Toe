@@ -36,10 +36,8 @@ const startGame = () => {
 const checkPlayer = () => {
     if(player === 'X') {
         computer = 'O';
-        console.log(player, computer);
     }else if (player === 'O'){
         computer = 'X';
-        console.log(player, computer);
     }
 }
 
