@@ -5,6 +5,7 @@ const end = document.querySelector('.endgame');
 
 let player;
 let computer;
+let madeMoves = [];
 
 const WINS = [
     [1,2,3],
