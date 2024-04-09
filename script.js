@@ -42,6 +42,12 @@ const checkPlayer = () => {
     }
 }
 
+const checkAvailableMoves = () => {
+    for(let move in madeMoves){
+        
+    }
+}
+
 const playerMove = () => {
     gameboardBoxes.forEach((box) => {
         box.addEventListener('click', (e) => {
