@@ -18,6 +18,8 @@ const WINS = [
     [3,5,7],
                 ];
 
+let board = [];
+
 const game = () => {
 	startGame();
     checkPlayer();
@@ -32,6 +34,11 @@ const startGame = () => {
 			start.style.display = 'none';
 		});
 	});
+
+    gameboardBoxes.forEach((box) => {
+        board.push(box.dataset.num)
+        console.log(board);
+    });
 };
 
 const checkPlayer = () => {
@@ -68,7 +75,7 @@ const computerMove = () => {
         if(box.dataset.num == move && box.textContent === '') {
             field = box.dataset.num;
             box.textContent = computer;
-        }
+    }
     });
 
 };
