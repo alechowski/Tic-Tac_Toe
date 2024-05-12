@@ -5,7 +5,11 @@ const end = document.querySelector('.endgame');
 
 let player;
 let computer;
-let madeMoves = [];
+let madeMoves = [
+    ['', '', '',
+     '', '', '', 
+     '', '', '']
+];
 
 
 
@@ -27,10 +31,10 @@ const startGame = () => {
 		});
 	});
 
-    gameboardBoxes.forEach((box) => {
-        board.push(box.textContent)
-        console.log(board);
-    });
+    // gameboardBoxes.forEach((box) => {
+    //     board.push(box.textContent)
+    //     console.log(board);
+    // });
 };
 
 const checkPlayer = () => {
@@ -47,7 +51,9 @@ const playerMove = () => {
             if(e.target.textContent != ''){
                 return;
             };
+            field = e.target.dataset.num - 1
             e.target.textContent = player;
+            madeMoves[field] = player;
             computerMove();
         })
     })
@@ -79,14 +85,14 @@ const computerMove = () => {
     //     // }
     // }
 
-    const bestMoves = [5, 1, 3, 7 ,9, 2, 4, 6, 8]
-    for (move in bestMoves) {
-        console.log(board[move] = computer);
-        if(move == board[move] && board[move] == '') {
-            board[move] = computer
-            console.log(board[move]);
-        }
-    }
+    // const bestMoves = [5, 1, 3, 7 ,9, 2, 4, 6, 8]
+    // for (move in bestMoves) {
+    //     console.log(board[move] = computer);
+    //     if(move == board[move] && board[move] == '') {
+    //         board[move] = computer
+    //         console.log(board[move]);
+    //     }
+    // }
 };
 
 // const checkWinner = () => {
